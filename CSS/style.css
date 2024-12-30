@@ -1,0 +1,82 @@
+body {
+  text-align: ;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  float: top;
+ /* min-height: 250px;*/
+  overflow: scroll;
+  margin: auto;
+  display: inline-block;
+  background: #F4F4F9;
+  outline: none;
+  font-family: Courier, sans-serif;
+  font-size: 14px;
+}
+
+iframe {
+  bottom: 0;
+  position: relative;
+  width: 100%;
+	  height: 30em;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  color: #35FFFF;
+}
+
+input[type=submit]:active {
+  background-color: green;
+  color: #ffb833;
+}
+
+ .divform{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* hide/Show More Button*/
+#more {display: none;
+}
+
+.More-Settings {
+color: #fff;
+ background: #000;
+ border-radius: 1.5em;
+ left: 30%;
+ padding: 1em;
+ text-decoration: none;
+ width: 40%;
+ }
+ .More-Settings:hover {
+ border: 2px solid #35FFFF;
+ }
+ .More-Settings:active {
+ border: 2px solid orange;
+ }
+ 
