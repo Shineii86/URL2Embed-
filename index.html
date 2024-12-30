@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title> URL to Embed Code Generator </title>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="Offline-Online-Status/offline.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="Offline-Online-Status/offline-theme-dark.css">
+  <link rel="stylesheet" href="Offline-Online-Status/offline-language-english.min.css" />
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+       display: none;
+}
+
+.disclaimer{
+display:none;
+}
+
+</style>
+</head>
+<body style="background-color: #0b79ea;">
+
+<div style="text-align: center; font-size: 20px; padding-top: auto; position: relative; overflow: hidden; box-shadow: rgb(51, 51, 51) 20px 20px 25px -10px; border: 1px solid #35FFFF; border-radius: 10px; background:#384776; color: white;" >
+<h3 style="text-align: center;">URL to Embed Code Generator</h3>
+</div>
+
+  <div class="divform">
+URL: (embed/video/audio/website)
+ <input type="text" name="url" id="url" list="browsers" placeholder="Enter URL Here"/>
+<datalist id="browsers">
+    <option value="https://www.youtube.com/embed/w0EF3AxJwLU">
+<option value="https://www.youtube.com/embed/6US7RN74D0k">
+    <option value="https://www.youtube.com/embed/pTA7Rl3SLGw">
+  </datalist>
+<br/>
+Tag Type: 
+    <select id="tag" name="tag">
+      <option value="iframe">iframe</option>
+      <option value="video">video</option>
+      <option value="audio">audio</option>
+      <option value="img">image</option>
+    </select>
+<br/>
+
+URL Source Type: 
+    <select id="urlFormat" name="urlFormat">
+      <option value="" hidden>Select</option>
+      
+      <option value="" disabled>Video types-</option>
+      <option value="#video.mp4">MP4</option>
+      <option value="#video.3gp">3GP</option>
+      <option value="#video.mpeg">MPEG</option>
+      <option value="#video.mkv">MKV</option>
+      <option value="#video.webm">WebM</option>
+      <option value="#video.wmv">WMV</option>
+      <option value="#video.avi">AVI</option>
+      <option value="#video.ogg">Ogg</option>
+      
+      <option value="" disabled>Audio types-</option>
+      <option value="#audio.mp3">MP3</option>
+      <option value="#audio.wav">WAV</option>
+      <option value="#audio.wma">WMA</option>
+      <option value="#audio.aac">AAC</option>
+      
+      <option value="" disabled>Image types-</option>
+      <option value="#image.png">PNG</option>
+      <option value="#image.svg">SVG</option>
+      <option value="#image.jpg">JPG</option>
+      <option value="#image.jpeg">JPEG</option>
+      <option value="#image.gif">GIF</option>
+      
+      <option value="" disabled>Code Types-</option>
+      <option value="#code.html">HTML</option>
+      <option value="#code.xml">XML</option>
+      <option value="#code.css">CSS</option>
+      <option value="#code.js">JS</option>
+      <option value="#code.php">PHP</option>
+      
+      <option value="" disabled>Other-</option>
+      <option value="">Other</option>
+      
+    </select>
+<br/>
+
+Width: <input type="text" name="width" id="iframewidth" value="338px"/><br/>
+Height : <input type="text" name="height" id="iframeheight" value="300px"/><br/>
+
+
+Video Player: ON/OFF
+    <select id="Usevideojs" name="Usevideojs">
+      <option value="">Off</option>
+      <option value=" id='my_video_1' class='video-js vjs-default-skin'">video.js</option>
+      <option value=" id='player' class'vid1' crossorigin playsinline">Red-Plyr v1.3</option>
+    </select>
+<br/>
+
+
+add Video Player Skin: Select
+    <select id="AddviCssJs" name="AddviCssJs">
+      <option value="">Select</option>
+      <option value="
+      <!--Add video.js Latest CSS Stylesheet-->
+      <link href='https://vjs.zencdn.net/7.15.4/video-js.css' rel='stylesheet' />
+      <!--Add video.js Latest JS Script-->
+      <script src='https://vjs.zencdn.net/7.15.4/video.min.js'></script>
+      <!--Quality Selecter CSS -->
+      <link href='https://unpkg.com/@silvermine/videojs-quality-selector/dist/css/quality-selector.css' rel='stylesheet'>
+      <!--custom-buttons-for-video.js-download-and-quality-selector-style.css-->
+      <link href='https://cdn.jsdelivr.net/gh/tarunraghav01309/video.js-Html5-Player-with-full-Controls/custom-buttons-for-video.js-download-and-quality-selector-style.css' rel='stylesheet'>
+      <!--Download Video.js Plugin-->
+      <script src='https://7ds7.github.io/videojs-vjsdownload/dist/videojs-vjsdownload.js'></script>
+      <!--Quality Selecter JS-->
+      <script src='https://unpkg.com/@silvermine/videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js'></script>
+      <!--custom-buttons-for-video.js-download-and-quality-selector-script.js-->
+      <script src='https://cdn.jsdelivr.net/gh/tarunraghav01309/video.js-Html5-Player-with-full-Controls/custom-buttons-for-video.js-download-and-quality-selector-script.js'></script>
+      <!--If you'd like to support IE8 (for Video.js versions prior to v7) --> 
+      <script src='https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js'></script>
+      ">video.js Skin [CSS+JS]</option>
+      <option value="
+      <!-- Add Plyr Newly Released CSS and JS -->
+      <link rel='stylesheet' href='https://cdn.plyr.io/3.6.8/plyr.css' />
+      <link rel='stylesheet' href='https://cdn.plyr.io/3.6.2/demo.css' />
+      <script src='https://cdn.plyr.io/3.6.8/plyr.js'></script>
+      <script src='https://cdn.plyr.io/3.6.2/demo.js' crossorigin='anonymous'></script>
+      <!-- Custom Controls plyr-config.js -->
+      <script src='https://cdn.jsdelivr.net/gh/tarunraghav01309/Red-Plyr_v1.3/plyr-config.js' crossorigin='anonymous'></script>
+      <!-- Custom Theme Colour plyr-config.css -->
+      <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/tarunraghav01309/Red-Plyr_v1.3/plyr-config.css' />
+      "> Red Plyr Skin [CSS+JS]</option>
+    </select>
+<br></br>
+
+<span id="dots">...</span>
+  <div id="more">
+
+Multiple Video src: ON/OFF
+    <select id="MVSourceTagOpen" name="MVSourceTagOpen">
+    <option value="">OFF</option>
+    <option value="<source src='">ON</option>
+    </select>
+ <br/>
+
+Multiple Quality label: ON/OFF
+    <select id="MVSourceTagClose" name="MVSourceTagClose">
+    <option value="">OFF</option>
+    <option value="/>">ON</option>
+    </select>
+ <br/>
+
+Quality label: {src-1} [Default Video]
+    <select id="qlsrc1" name="qlsrc1">
+      <option value="" style="display:none;">Select</option>
+      <option value="size='360' label='360'">360p</option>
+      <option value="size='480' label='480'">480p</option>
+      <option value="size='720' label='720'">720p</option>
+      <option value="size='1080' label='1080'">1080p</option>
+    </select>
+<br/>
+
+Video URL: {src-2}
+ <input type="text" name="vusrc2" id="vusrc2" placeholder="Enter Video URL Here "/>
+
+Quality label: {src-2}
+    <select id="qlsrc2" name="qlsrc2">
+      <option value="" style="display:none;">Select</option>
+      <option value="' size='360' label='360'">360p</option>
+      <option value="' size='480' label='480'">480p</option>
+      <option value="' size='720' label='720'">720p</option>
+      <option value="' size='1080' label='1080'">1080p</option>
+      <option value="' ">None (Disable it)</option>
+    </select>
+<br/>
+
+Video URL: {src-3}
+ <input type="text" name="vusrc3" id="vusrc3" placeholder="Enter Video URL Here "/>
+
+Quality label: {src-3}
+    <select id="qlsrc3" name="qlsrc3">
+      <option value="" style="display:none;">Select</option>
+     <option value="' size='360' label='360'">360p</option>
+     <option value="' size='480' label='480'">480p</option>
+     <option value="' size='720' label='720'">720p</option>
+     <option value="' size='1080' label='1080'">1080p</option>
+     <option value="' ">None (Disable it)</option>
+    </select>
+<br/>
+
+Video URL: {src-4}
+ <input type="text" name="vusrc4" id="vusrc4" placeholder="Enter Video URL Here "/>
+
+Quality label: {src-4}
+    <select id="qlsrc4" name="qlsrc4">
+      <option value="" style="display:none;">Select</option>
+      <option value="' size='360' label='360'">360p</option>
+      <option value="' size='480' label='480'">480p</option>
+      <option value="' size='720' label='720'">720p</option>
+      <option value="' size='1080' label='1080'">1080p</option>
+      <option value="' ">None (Disable it)</option>
+    </select>
+<br></br>
+
+
+Preload: 
+    <select id="preload" name="preload">
+      <option value="auto">Auto</option>
+      <option value="metadata">Metadata</option>
+      <option value="none">None</option>
+    </select>
+<br/>
+
+Show Controls: 
+    <select id="controls" name="controls">
+      <option value=" controls">Yes</option>
+      <option value="">No</option>
+    </select>
+<br/>
+
+autoplay: 
+    <select id="autoplay" name="autoplay">
+      <option value="">No</option>
+      <option value="autoplay">Yes</option>
+    </select>
+<br/>
+
+loop: 
+    <select id="loop" name="loop">
+      <option value="">No</option>
+      <option value="loop">Yes</option>
+    </select>
+<br/>
+
+muted: 
+    <select id="muted" name="muted">
+      <option value="">No</option>
+      <option value="muted">Yes</option>
+    </select>
+<br/>
+
+allowFullscreen: 
+    <select id="fullscreen" name="tag">
+      <option value="allowfullscreen">Yes</option>
+      <option value="nofullscreen">No</option>
+    </select>
+<br/>
+
+allowDownload: 
+    <select id="download" name="tag">
+      <option value="allowdownload">Yes</option>
+      <option value="nodownload">No</option>
+    </select>
+<br/>
+
+border-width:
+    <select id="brWidth" name="brWidth">
+      <option value="0px">0px</option>
+      <option value="1px" selected>1px</option>
+      <option value="2px">2px</option>
+      <option value="3px">3px</option>
+      <option value="4px">4px</option>
+      <option value="5px">5px</option>
+    </select>
+<br/>
+
+border-color=:
+ <input type="color" name="color" id="colorPicker" value="#35FFFF"> 
+    <input type="text" name="color" id="color" placeholder="#35FFFF" value="#35FFFF"/>
+   
+    <br/>
+<br/>
+
+title:
+    <input type="text" name="title" id="title" placeholder="Enter Title Here" value=""/>
+<br/>
+
+scrolling: 
+    <select id="scrolling" name="scrolling">
+      <option value="auto">Auto</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+<br/>
+
+loading: 
+    <select id="loading" name="loading">
+      <option value="auto">Auto</option>
+      <option value="lazy">Lazy</option>
+      <option value="eager">Eager</option>
+    </select>
+<br/>
+
+Poster/Thumbnail URL: 
+    <input type="text" name="poster" id="poster" placeholder="Enter Poster URL Here"/><br/>
+<br></br>
+
+Captions/Subtitles: On/Off
+    <select id="trackTagStart" name="trackTagStart">
+    <option value="">Off</option>
+    <option value="<track src='">On</option>
+    </select>
+ <br/>
+
+Captions/Subtitles: URL (.vtt)
+    <input type="text" name="trackSrc" id="trackSrc" placeholder="Enter Subtitle URL Here"/><br/>
+<br/>
+
+Captions/Subtitles: URL Type
+    <select id="trackTagEnd" name="trackTagEnd">
+    <option value="">Select</option>
+    <option value="/>">.vtt</option>
+    </select>
+ <br/>
+
+Captions/Subtitles: kind
+    <select id="kind" name="kind">
+    <option value="">Select</option>
+    <option value="' captions='true' kind='captions'">captions</option>
+    <option value="' subtitles='true' kind='subtitles'">subtitles</option>
+    </select>
+ <br/>
+
+Captions/Subtitles: srclang
+    <select id="srclang" name="srclang">
+    <option value="">Select</option>
+    <option value=" srclang='en'">en</option>
+    <option value=" srclang='hi'">hi</option>
+    <option value=" srclang='fr'">fr</option>
+    </select>
+ <br/>
+
+Captions/Subtitles: label
+    <select id="label" name="label">
+    <option value="">Select</option>
+    <option value=" label='English'">English</option>
+    <option value=" label='Hindi'">Hindi</option>
+    <option value=" label='Français'">Français</option>
+    </select>
+ <br/>
+
+ Captions/Subtitles: Show Default
+ <select id="trackDefault" name="trackDefault">
+ <option value="">Select</option>
+ <option value=" default">Yes</option>
+ <option value="">No</option>
+ </select>
+ <br/>
+ 
+</div>
+
+<center>
+<button  class="More-Settings" onclick="myFunction()" id="myBtn">More Settings</button>
+</center>
+<br>
+
+<input id="generate" style="font-size: 17px;" type="submit" value="Generate">
+<br/><br/>
+<center>
+<div style="padding-top: auto; position: relative; overflow: hidden; box-shadow: rgb(51, 51, 51) 20px 20px 25px -10px; border: 1px solid rgb(53, 255, 255);" >
+HTML Code Preview
+</div>
+</center>
+</div>
+
+<style>
+/*
+* {box-sizing: border-box}*/
+/* Set height of body and the document to 100% */
+/*
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+*/ 
+/* Style tab links */
+.tablink {
+  background-color: black;
+  color: #35FFFF;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #35FFFF;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 51px 3px;
+  height: 100%;
+  text-align: center;
+}
+
+
+#HTML {background-color: #333333; color: white;}
+#CSS {background-color: #333333; color: white;}
+#JS {background-color: #333333; color: white;}
+#Result{background-color: #333333;}
+</style>
+</head>
+
+<button class="tablink" onclick="openPage('HTML', this, '#333333')" id="defaultOpen">HTML</button>
+<button class="tablink" onclick="openPage('CSS', this, '#333333')">CSS</button>
+<button class="tablink" onclick="openPage('JS', this, '#333333')">JS</button>
+<button class="tablink" onclick="openPage('Result', this, '#FF3333')" onClick="function()">Result</button>
+
+
+<div id="HTML" class="tabcontent">
+  <div style="padding-top: auto; position: relative; overflow: hidden; box-shadow: rgb(51, 51, 51) 20px 20px 25px -10px; border: 1px solid rgb(53, 255, 255);" >
+  <textarea id="html" style="font-weight: 900; background-color: #222222; color: #ffb833" placeholder="HTML"></textarea>
+  </div>
+  <br>
+  <button class="" onclick="openPage('Result', this, '')" onClick="function()">Preview</button>
+  <button onclick="copy1(); return alert('Code Copied');">Copy Code</button>
+  <input type="button" value="Clear" onclick="clearContent1()">
+</div>
+
+<div id="CSS" class="tabcontent">
+  <div style="padding-top: auto; position: relative; overflow: hidden; box-shadow: rgb(51, 51, 51) 20px 20px 25px -10px; border: 1px solid rgb(53, 255, 255);" >
+  <textarea id="css" style="font-weight: 900; background-color: #222222; color: #ff4d4d" placeholder="CSS"></textarea>
+  </div>
+  <br>
+  <button onclick="copy2(); return alert('Code Copied');">Copy Code</button>
+  <input type="button" value="Clear" onclick="clearContent2()">
+</div>
+
+<div id="JS" class="tabcontent">
+   <div style="padding-top: auto; position: relative; overflow: hidden; box-shadow: rgb(51, 51, 51) 20px 20px 25px -10px; border: 1px solid rgb(53, 255, 255);" >
+   <textarea id="js" style="font-weight:900; background-color: #222222; color: #ff00ff" placeholder="JavaScript"></textarea>
+   </div>
+   <br>
+   <button onclick="copy3(); return alert('Code Copied');">Copy Code</button>
+   <input type="button" value="Clear" onclick="clearContent3()">
+</div>
+
+<div id="Result" class="tabcontent">
+  <div style="padding-top: auto; position: relative; overflow: hidden; box-shadow: rgb(51, 51, 51) 20px 20px 25px -10px; border: 1px solid rgb(53, 255, 255);" >
+  <iframe id="code" style="background: white;"></iframe>
+  </div>
+</div>
+<br>
+<a style="background-color: #364655;
+  color: #35FFFF; border-radius: 5px;" href="../About-us_Page.html">© Copyright <script>document.write(new Date().getFullYear())</script> MK DEVS</a>
+  <span>• </span>    
+<br></br>
+
+<script type="text/javascript" src="JS/app.js"></script>
+<script
+ src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+ crossorigin="anonymous"></script>
+<script>
+// iframe/Video/audio input form manage.
+ $(function() {
+ $("#generate").click(function() {
+ 
+ var url = $("#url").val();
+ var tag = $("#tag").val();
+ 
+ var width = $("#iframewidth").val();
+ var height = $("#iframeheight").val();
+ var urlFormat = $("#urlFormat").val();
+ 
+ var Usevideojs = $("#Usevideojs").val();
+ var AddviCssJs = $("#AddviCssJs").val();
+ 
+ var qlsrc1 = $("#qlsrc1").val();
+ 
+ var MVSourceTagOpen = $("#MVSourceTagOpen").val();
+ var vusrc2 = $("#vusrc2").val();
+ var qlsrc2 = $("#qlsrc2").val();
+ 
+ var vusrc3 = $("#vusrc3").val();
+ var qlsrc3 = $("#qlsrc3").val();
+ 
+ var vusrc4 = $("#vusrc4").val();
+ var qlsrc4 = $("#qlsrc4").val();
+ var MVSourceTagClose = $("#MVSourceTagClose").val();
+ 
+ var preload = $("#preload").val();
+ var controls = $("#controls").val();
+ var autoplay = $("#autoplay").val();
+ var loop = $("#loop").val();
+ var muted = $("#muted").val();
+ var fullscreen = $("#fullscreen").val();
+ var download = $("#download").val();
+ var color = $("#color").val();
+ var brWidth= $("#brWidth").val();
+ 
+ var title = $("#title").val();
+ var scrolling = $("#scrolling").val();
+ var loading = $("#loading").val();
+ 
+ var poster = $("#poster").val();
+ 
+ var trackTagStart = $("#trackTagStart").val();
+ var trackSrc = $("#trackSrc").val();
+ var kind = $("#kind").val();
+ var label = $("#label").val();
+ var srclang = $("#srclang").val();
+ var trackTagEnd = $("#trackTagEnd").val();
+ var trackDefault = $("#trackDefault").val();
+ 
+ $("#html").val("<"+tag+" src='"+url+"'"+Usevideojs+" poster='"+poster+"' style='border: "+brWidth+" solid "+color+";' width='"+width+"' height='"+height+"' preload='"+preload+"'"+controls+" "+autoplay+" "+loop+" "+muted+" controlsList='"+fullscreen+" "+download+"' title='"+title+"' scrolling='"+scrolling+"' loading='"+loading+"'><source src='"+url+urlFormat+"' "+qlsrc1+" selected='true'/>"+MVSourceTagOpen+""+vusrc2+""+qlsrc2+""+MVSourceTagClose+""+MVSourceTagOpen+""+vusrc3+""+qlsrc3+""+MVSourceTagClose+""+MVSourceTagOpen+""+vusrc4+""+qlsrc4+""+MVSourceTagClose+""+trackTagStart+""+trackSrc+""+kind+""+srclang+""+label+""+trackDefault+""+trackTagEnd+"</"+tag+">"+AddviCssJs+"");  
+ });
+ });
+ 
+ //Copy Text Value of= HTML
+ function copy1() {
+ let textarea = document.getElementById("html");
+ textarea.select();
+ document.execCommand("copy");
+ }
+ 
+ //Copy Text Value of= CSS
+ function copy2() {
+ let textarea = document.getElementById("css");
+ textarea.select();
+ document.execCommand("copy");
+ }
+ 
+ //Copy Text Value of= JS
+ function copy3() {
+ let textarea = document.getElementById("js");
+ textarea.select();
+ document.execCommand("copy");
+ }
+ 
+ // Clear Text Value of = HTML
+ function clearContent1()
+ {
+ document.getElementById("html").value='';
+ }
+ 
+ // Clear Text Value of= CSS
+ function clearContent2()
+ {
+ document.getElementById("css").value='';
+ }
+ 
+ // Clear Text Value of= JS
+ function clearContent3()
+ {
+ document.getElementById("js").value='';
+ }
+ 
+ // hide/Show More Settings onClick Button
+ function myFunction() {
+ var dots = document.getElementById("dots");
+ var moreText = document.getElementById("more");
+ var btnText = document.getElementById("myBtn");
+ 
+ if (dots.style.display === "none") {
+ dots.style.display = "inline";
+ btnText.innerHTML = "More Settings"; 
+ moreText.style.display = "none";
+ } else {
+ dots.style.display = "none";
+ btnText.innerHTML = "Hide Settings"; 
+ moreText.style.display = "inline";
+ }
+ }
+ </script>
+ 
+ <!-- Hax Color Picker or Generator -->
+ <script> 
+ 
+ function myColor() { 
+ 
+ // Get the value return by color picker 
+ var color = document.getElementById('colorPicker').value; 
+ 
+ // Set the color as background 
+ // document.body.style.backgroundColor = color; 
+ 
+ // Take the hex code 
+ document.getElementById('color').value = color; 
+ } 
+ 
+ // When user clicks over color picker, 
+ // myColor() function is called 
+ document.getElementById('colorPicker') 
+ .addEventListener('input', myColor); 
+ 
+ </script> 
+ 
+ <!--Get User Online/Offline Status-->
+ <script type="text/javascript">
+ Offline.options = {
+ // to check the connection status immediatly on page load.
+ checkOnLoad: true,
+ 
+ // to monitor AJAX requests to check connection.
+ interceptRequests: true,
+ 
+ // to automatically retest periodically when the connection is down (set to false to disable).
+ reconnect: {
+ // delay time in seconds to wait before rechecking.
+ initialDelay: 3,
+ 
+ // wait time in seconds between retries.
+ delay: 10
+ },
+ 
+ // to store and attempt to remake requests which failed while the connection was down.
+ requests: true
+ };
+ </script>
+</body>
+</html> 
